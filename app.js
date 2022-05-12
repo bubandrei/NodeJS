@@ -1,5 +1,20 @@
 import fs from 'fs';
 
+
+
+/////////////////////////////////////////////////////////////////////////////////////
+//Даны два файла с числами. Найдите сумму этих чисел и запишите результат в третий файл.
+// async function func() {
+//     try {
+//         let num1 = await fs.promises.readFile('num1.txt', 'utf-8');
+//         let num2 = await fs.promises.readFile('num2.txt', 'utf-8');
+//         await fs.promises.writeFile('num3.txt', +num1 + +num2)
+//     } catch (error) {
+//         console.log('ошибка')
+//     }
+// }
+// func();
+
 ////////////////////////////////////////////////////////////////////////////
 //есть 3 файла с числами. Найдите сумму этих чисел и запишите в новый файл.
 // let names = ['num1.txt', 'num2.txt', 'num3.txt'];
