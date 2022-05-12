@@ -1,9 +1,22 @@
-import fs from 'fs';
+// import fs from 'fs/promises';
+
+// fs.readFile('1.txt', 'utf8').then(data => {
+// 	console.log(data);
+// });
+
+
+
+// async function func() {
+//     let data = await fs.promises.readFile('readme.txt', 'utf8');
+//     console.log(data);
+// }
+
+// func();
 
 //////////////////////////////////////////////////////////////////////////////////
-//Дан массив имен файлов. Переберите этот массив циклом и создайте файлы с 
-// этими именами, записав при создании в каждый файл случайное число. 
-// После этого в цикле прочитайте содержимое всех файлов и найдите сумму их чисел. 
+//Дан массив имен файлов. Переберите этот массив циклом и создайте файлы с
+// этими именами, записав при создании в каждый файл случайное число.
+// После этого в цикле прочитайте содержимое всех файлов и найдите сумму их чисел.
 // Запишите ее в новый файл.
 // let arr = ['1.txt', '2.txt', '3.txt'];
 // let sum = 0;
@@ -13,9 +26,8 @@ import fs from 'fs';
 //             await fs.promises.writeFile(item, Math.random());
 //         }
 //         for (let file of arr) {
-//             console.log(file);
 //             sum += Number(await fs.promises.readFile(file, 'utf-8'));
-//             await fs.promises.writeFile('newSum', sum)
+//             await fs.promises.writeFile('newSum.txt', sum)
 //         }
 //     } catch (error) {
 //         console.log('enough');
