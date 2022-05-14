@@ -1,4 +1,12 @@
 import http, { request } from 'http';
+// счетчик запросов////////////////////////////////////
+// let i = 0;
+// http.createServer((request, response) => {
+// 	response.setHeader('Content-Type', 'text/html');
+// 	response.statusCode = 200;
+// 	response.write(String(++i));
+// 	response.end();
+// }).listen(3000);
 
 //////////////////////////////////////////////////////
 //сервер при запросе отдаёт текущее время
