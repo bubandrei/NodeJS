@@ -1,5 +1,32 @@
 import http, { request } from 'http';
 
+//simple routing
+// http.createServer((request, response) => {
+//     let text;
+//     let status = 200;
+//     switch (request.url) {
+//         case '/page1':
+//             text = '1';
+//             status;
+//             break;
+//         case '/page2':
+//             text = '2';
+//             status;
+//             break;
+//         case '/page3':
+//             text = '3';
+//             status;
+//             break;
+//         default:
+//             text = 'page not found';
+//             status = 404;
+//     }
+//     response.writeHead(status, { 'Content-Type': 'text/html' });
+//     response.write(text);
+//     response.end();
+// }).listen(3000)
+
+
 //////////////////////////////////////////////////////////
 // вывод url
 // http.createServer((request, response) => {
