@@ -1,4 +1,21 @@
 import http, { request } from 'http';
+
+//////////////////////////////////////////////////////
+//count
+// let i = 0;
+// http.createServer((request, response) => {
+//     if (i == 10) {
+//         i = 'You are a winner';
+//     }
+//     else {
+//         ++i;
+//     }
+//     response.writeHead(200, { 'Content-Type': 'text/html' });
+//     response.write(String(`${i}`));
+//     response.end();
+// }).listen(3000)
+
+
 // счетчик запросов////////////////////////////////////
 // let i = 0;
 // http.createServer((request, response) => {
