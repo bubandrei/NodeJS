@@ -1,4 +1,16 @@
-// import fs from 'fs/promises';
+// import fs from 'fs';
+// import { constants } from 'fs';
+
+// import { access } from 'fs/promises';
+
+// fs.access('1.txt', constants.F_OK).then(() => {
+// 	console.log('file exists');
+// }).catch(() => {
+// 	console.error('file does not exists');
+// });
+
+
+
 
 // fs.readFile('1.txt', 'utf8').then(data => {
 // 	console.log(data);
