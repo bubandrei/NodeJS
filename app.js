@@ -1,5 +1,39 @@
 import http, { request } from 'http';
 
+// simple routing witn object
+// let obj = {
+// 	'/page1': '111',
+// 	'/page2': '222',
+// 	'/page3': '333',
+// }
+// http.createServer((request, response) => {
+//     let text;
+//     let status = 200;
+//     switch (request.url) {
+//         case '/page1':
+//             text = obj['/page1'];
+//             status;
+//             break;
+//         case '/page2':
+//             text = obj['/page2'];
+//             status;
+//             break;
+//         case '/page3':
+//             text = obj['/page3'];
+//             status;
+//             break;
+//         default:
+//             text = 'page not found';
+//             status = 404;
+//     }
+//     response.writeHead(status, { 'Content-Type': 'text/html' });
+//     response.write(text);
+//     response.end();
+// }).listen(3000)
+
+
+
+///////////////////////////////////////////////////////////
 //simple routing
 // http.createServer((request, response) => {
 //     let text;
