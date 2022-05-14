@@ -1,4 +1,39 @@
+import fs from 'fs';
 import http, { request } from 'http';
+
+let obj = {
+    '/page1': 'file1.html',
+    '/page2': 'file2.html',
+    '/page3': 'file3.html',
+}
+http.createServer(async(request, response) => {
+    let text;
+    let status = 200;
+    switch (request.url) {
+        case '/page1':
+            text = await fs.promises.readFile(obj['/page1'], 'utf-8');
+            status;
+            break;
+        case '/page2':
+            text = await fs.promises.readFile(obj['/page2'], 'utf-8');
+            status;
+            break;
+        case '/page3':
+            text = await fs.promises.readFile(obj['/page3'], 'utf-8');
+            status;
+            break;
+        default:
+            text = 'ERROR';
+            status = 404;
+    }
+    response.writeHead(status, {'Content-Type': 'text/html'});
+    response.write(text);
+    response.end();
+}).listen(3000);
+
+
+
+
 
 // simple routing witn object
 // let obj = {
