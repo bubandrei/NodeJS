@@ -1,7 +1,10 @@
 import http, { request } from 'http';
 
+//////////////////////////////////////////////////////
 //сервер при запросе отдаёт текущее время
-// let date = new Date();
+// let date;
+// setInterval(() => { date = new Date }, 1000);
+
 // http.createServer((request, response) => {
 //     response.setHeader('Content-Type', 'text/html');
 //     response.statusCode = 200;
