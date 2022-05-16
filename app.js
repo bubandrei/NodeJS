@@ -1,18 +1,28 @@
 import fs from 'fs';
 import http from 'http';
 
-http.createServer(async (request, response) => {
-    if (request.url != '/favicon.ico') {
-        let path = 'root' + request.url;
-        if ((await fs.promises.stat(path)).isDirectory()) {
-            path += 'index.html';
-        }
-        let text = await fs.promises.readFile(path, 'utf-8');
-        response.writeHead(200, { 'Content-Type': 'text/html' });
-        response.write(text);
-        response.end();
-    }
-}).listen(3000);
+///////////////////////////////////////////////////////////////////////////////
+//stat server
+// http.createServer(async (request, response) => {
+//     if (request.url != '/favicon.ico') {
+//         let text;
+//         let status;
+//         let path = 'root' + request.url;
+//         try {
+//             if ((await fs.promises.stat(path)).isDirectory()) {
+//                 status = 200;
+//                 path += 'index.html';
+//             }
+//             text = await fs.promises.readFile(path, 'utf-8');
+//         } catch (err) {
+//             status = 404;
+//             text = 'page not found';
+//         }
+//         response.writeHead(status, { 'Content-Type': 'text/html' });
+//         response.write(text);
+//         response.end();
+//     }
+// }).listen(3000);
 
 // http.createServer(async (request, response) => {
 //     if (request.url != '/favicon.ico') {
