@@ -1,6 +1,21 @@
 import express from 'express';
 let app = express();
 
+//////////////////////////////////////////////////////////////
+// res.redirect
+// app.get('/1/', (req, res) => {
+//     res.send('page12346');
+// });
+// app.get('/2/', (req, res) => {
+//     res.redirect(301, '/1/');
+// });
+// app.get((req, res) => {
+//     res.status(404).send('ERROR');
+// })
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
 
 ////////////////////////////////////////////////////////////////
 // status 403
