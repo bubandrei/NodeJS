@@ -1,19 +1,21 @@
 import express from 'express';
 let app = express();
 
-app.get('/1/', (req, res) => {
-    res.send('page1234666667777');
-});
-app.get('/2/', (req, res) => {
-    res.type('text/plain');
-    res.send('NEW page');
-});
-app.get((req, res) => {
-    res.status(404).send('ERROR');
-})
-app.listen(3000, () => {
-    console.log('Running');
-})
+///////////////////////////////////////////////////////////
+//res.send
+// app.get('/1/', (req, res) => {
+//     res.send('page1234666667777');
+// });
+// app.get('/2/', (req, res) => {
+//     res.type('text/plain');
+//     res.send('NEW page');
+// });
+// app.get((req, res) => {
+//     res.status(404).send('ERROR');
+// })
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
 
 
 
