@@ -1,21 +1,21 @@
-import fs from 'fs';
-import http from 'http';
+// import fs from 'fs';
+// import http from 'http';
 
-http.createServer(async (request, response) => {
-    let lpath = 'root/layout.html';
-    let cpath = 'page' + request.url + 'content.html';
-    let tpath = 'page' + request.url + 'title.html';
-    let layout = await fs.promises.readFile(lpath, 'utf8');
-    let content = await fs.promises.readFile(cpath, 'utf8');
-    let title = await fs.promises.readFile(tpath, 'utf8');
+// http.createServer(async (request, response) => {
+//     let lpath = 'root/layout.html';
+//     let cpath = 'page' + request.url + 'content.html';
+//     let tpath = 'page' + request.url + 'title.html';
+//     let layout = await fs.promises.readFile(lpath, 'utf8');
+//     let content = await fs.promises.readFile(cpath, 'utf8');
+//     let title = await fs.promises.readFile(tpath, 'utf8');
 
-    layout = layout.replace(/\{% get content %\}/, content);
-    layout = layout.replace(/\{% get title %\}/, title);
+//     layout = layout.replace(/\{% get content %\}/, content);
+//     layout = layout.replace(/\{% get title %\}/, title);
 
-    response.writeHead(200, { 'Content-Type': 'text/html' });
-    response.write(layout);
-    response.end();
-}).listen(3000);
+//     response.writeHead(200, { 'Content-Type': 'text/html' });
+//     response.write(layout);
+//     response.end();
+// }).listen(3000);
 
 ///////////////////////////////////////////////////////////////////////////////
 //stat server
