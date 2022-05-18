@@ -5,8 +5,21 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
-////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////
 //app.use
+// app.use(express.static(__dirname + '/public/'));
+// app.get('/test.html', (req, res) => {
+//     res.sendFile(__dirname + '/test.html');
+// });
+// app.get('/image', (req, res) => {
+//     res.sendFile(__dirname + '/image.png');
+// })
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
+////////////////////////////////////////////////////////////////
+//app.use express.static
 // app.use(express.static(__dirname + '/public/'));
 // app.get('/test.html', (req, res) => {
 //     res.sendFile(__dirname + '/test.html');
