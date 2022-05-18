@@ -5,6 +5,21 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+
+/////////////////////////////////////////////////////////////
+// let str = `<div>
+// 	<p>text1</p>
+// 	<p>text2</p>
+// 	<p>text3</p>
+// </div>`;
+
+// app.get('/test/', (req, res) => {
+//     res.send(str);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
 //////////////////////////////////////////////////////////////
 //app.use
 // app.use(express.static(__dirname + '/public/'));
