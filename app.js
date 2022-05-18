@@ -3,8 +3,17 @@ import * as path from 'path';
 import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
 let app = express();
+
+////////////////////////////////////////////////////////////////
+//app.use
+// app.use(express.static(__dirname + '/public/'));
+// app.get('/test.html', (req, res) => {
+//     res.sendFile(__dirname + '/test.html');
+// });
+// app.listen(3000, ()=>{
+//     console.log('Running');
+// });
 
 //////////////////////////////////////////////////////////////
 //__dirname
