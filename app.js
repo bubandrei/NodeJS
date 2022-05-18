@@ -1,5 +1,18 @@
 import express from 'express';
+import * as path from 'path';
+import * as url from 'url';
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 let app = express();
+
+app.get('/1/', (req, res) => {
+    console.log(__dirname);
+    res.sendFile(__dirname + '/file1.html');
+});
+app.listen(3000, () => {
+    console.log('Running');
+})
 
 ///////////////////////////////////////////////////////////
 //res.send
