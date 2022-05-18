@@ -5,6 +5,20 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+//////////////////////////////////////////////////////////////
+//array list
+// let arr = ['a', 'b', 'c'];
+// app.get('/test/', (req, res) => {
+//     let result = '<ul>';
+//     for (let elem of arr) {
+//         result += '<li>' + elem + '</li>';
+//     }
+//     result += '</ul>';
+//     res.send(result);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 /////////////////////////////////////////////////////////////
 // let str = `<div>
