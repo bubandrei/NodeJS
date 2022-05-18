@@ -5,9 +5,37 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+let users = [
+    {
+        name: 'user1',
+        age: 31,
+    },
+    {
+        name: 'user2',
+        age: 32,
+    },
+    {
+        name: 'user3',
+        age: 33,
+    },
+];
+
+app.get('/test/', (req, res) => {
+    let result = '<ul>';
+    for (let elem of users) {
+        result += '<li>' + elem.name + ' ' + elem.age + '</li>';
+    }
+    result += '</ul>';
+    res.send(result);
+});
+app.listen(3000, () => {
+    console.log("Running");
+});
+
+
 //////////////////////////////////////////////////////////////
 //array list
-// let arr = ['a', 'b', 'c'];
+// let arr = ['user1', 'user2', 'user3', 'user4', 'user5'];
 // app.get('/test/', (req, res) => {
 //     let result = '<ul>';
 //     for (let elem of arr) {
