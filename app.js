@@ -1,3 +1,4 @@
+import { table } from 'console';
 import express from 'express';
 import * as path from 'path';
 import * as url from 'url';
@@ -5,32 +6,65 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
-let users = [
-    {
-        name: 'user1',
-        age: 31,
-    },
-    {
-        name: 'user2',
-        age: 32,
-    },
-    {
-        name: 'user3',
-        age: 33,
-    },
-];
+/////////////////////////////////////////////////////////////////////
+// app.get  table
+// let employees = [
+//     {
+//         surname: 'surname1',
+//         name: 'user1',
+//         salary: 1000,
+//     },
+//     {
+//         surname: 'surname2',
+//         name: 'user2',
+//         salary: 2000,
+//     },
+//     {
+//         surname: 'surname3',
+//         name: 'user3',
+//         salary: 3000,
+//     },
+// ];
+// app.get('/test/', (req, res) => {
+//     let result = '<table>';
+//     for (let elem of employees) {
+//         result += '<tr><td>' + elem.surname + '</td>' + '<td>' + elem.name + '</td>' + '<td>' + elem.salary + '</td></tr>';
+//     }
+//     result += '</table>';
+//     res.send(result);
+// });
+// app.listen(3000, () => {
+//     console.log('Running')
+// });
 
-app.get('/test/', (req, res) => {
-    let result = '<ul>';
-    for (let elem of users) {
-        result += '<li>' + elem.name + ' ' + elem.age + '</li>';
-    }
-    result += '</ul>';
-    res.send(result);
-});
-app.listen(3000, () => {
-    console.log("Running");
-});
+///////////////////////////////////////////////////////////////
+// object app.get
+// let users = [
+//     {
+//         name: 'user1',
+//         age: 31,
+//     },
+//     {
+//         name: 'user2',
+//         age: 32,
+//     },
+//     {
+//         name: 'user3',
+//         age: 33,
+//     },
+// ];
+
+// app.get('/test/', (req, res) => {
+//     let result = '<ul>';
+//     for (let elem of users) {
+//         result += '<li>' + elem.name + ' ' + elem.age + '</li>';
+//     }
+//     result += '</ul>';
+//     res.send(result);
+// });
+// app.listen(3000, () => {
+//     console.log("Running");
+// });
 
 
 //////////////////////////////////////////////////////////////
