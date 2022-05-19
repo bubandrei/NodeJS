@@ -11,6 +11,31 @@ let app = express();
 // let users = [
 //     {
 //         name: 'user1',
+//         age: '31',
+//     },
+//     {
+//         name: 'user2',
+//         age: '32',
+//     },
+//     {
+//         name: 'user3',
+//         age: '33',
+//     },
+// ];
+// app.get('/users/:id/:field', (req, res) => {
+//     let user = users[req.params.id];
+//     console.log(user);
+//     res.send(user[req.params.field]);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+////////////////////////////////////////////////////////////////
+//routing and array
+// let users = [
+//     {
+//         name: 'user1',
 //         age: 31,
 //     },
 //     {
