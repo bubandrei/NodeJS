@@ -6,6 +6,36 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+//////////////////////////////////////////////////////////////////////
+//routing and array
+// let users = ['user1', 'user2', 'user3', 'user4', 'user5'];
+// app.get('/test/:num', (req, res) => {
+//     let num = req.params.num;
+//     if (num > 0 && num < users.length) {
+//         res.send('My number:' + users[num]);
+//     } else {
+//         res.status(404).send('not found');
+//     }
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+// let users = ['user1', 'user2', 'user3', 'user4', 'user5'];
+
+// app.get('/test/:num', (req, res) => {
+//     let num = req.params.num;
+//     if (num => 0 && num <= 4) {
+//         res.send(users[num]);
+//     } else {
+//         res.send('not found');
+//     }
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+
+
 ////////////////////////////////////////////////////////////////////
 //with array
 // let users = ['user1', 'user2', 'user3', 'user4', 'user5'];
