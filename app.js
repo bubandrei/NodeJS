@@ -1,10 +1,21 @@
 import { table } from 'console';
+import fs from 'fs/promises';
+import { constants } from 'fs';
 import express from 'express';
 import * as path from 'path';
 import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
+
+///////////////////////////////////////////////////////////
+//routing whith files
+// app.get('/page/:num', (req, res) => {
+//     res.sendFile(__dirname + '/public/' + req.params.num + '.html');
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 ////////////////////////////////////////////////////////////////
 //routing and array
