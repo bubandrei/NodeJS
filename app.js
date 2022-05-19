@@ -6,6 +6,16 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+///////////////////////////////////////////////////////////////////////
+//regular
+// app.get(/admin|user(name)?/, (req, res) => {
+//     res.send('HELLO');
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
+
 
 /////////////////////////////////////////////////////////////////////////
 //regular
