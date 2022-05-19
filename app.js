@@ -6,6 +6,24 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+//////////////////////////////////////////////////////////////////////////
+//general 404 error
+// app.get('/test/:num/', function (req, res) {
+//     let num = req.params.num;
+
+//     if (/\d+/.test(num)) {
+//         res.send('My num: ' + num);
+//     } else {
+//         res.status(404).send('not found');
+//     }
+// });
+// app.use(function (req, res) {
+//     res.status(404).send('not found');
+// });
+// app.listen(3000, ()=>{
+//     console.log('Running');
+// })
+
 /////////////////////////////////////////////////////////////////
 // params route
 // app.get('/test/:num', (req, res) => {
