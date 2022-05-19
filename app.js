@@ -6,6 +6,17 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+////////////////////////////////////////////////////////////////////////
+//with array
+// let arr = ['a', 'b', 'c'];
+
+// app.get('/test/:num/', function(req, res) {
+// 	res.send(arr[req.params.num]);
+// });
+// app.listen(3000, ()=>{
+//     console.log('Running');
+// })
+
 //////////////////////////////////////////////////////////////////////////
 //general 404 error
 // app.get('/test/:num/', function (req, res) {
