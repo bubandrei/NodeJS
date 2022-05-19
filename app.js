@@ -7,9 +7,7 @@ const __dirname = path.dirname(__filename);
 let app = express();
 
 app.get('/test/:num/', function (req, res) {
-    // let sum = req.params.num**2;
-    // console.log(req.params.num);
-    res.send(req.params.num);
+    res.send(`${req.params.num**2}`);
 });
 app.listen(3000, () => {
     console.log('Running');
