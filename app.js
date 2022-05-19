@@ -6,12 +6,23 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
-app.get('/test/:num/', function (req, res) {
-    res.send(`${req.params.num**2}`);
-});
-app.listen(3000, () => {
-    console.log('Running');
-})
+
+
+// app.get('/test/:num1/:num2/', (req, res) => {
+//     res.send(`${+req.params.num1 + +req.params.num2}`);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+///////////////////////////////////////////////////////////////////
+//params
+// app.get('/test/:num/', (req, res) => {
+//     res.send(`${req.params.num ** 2}`);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
 /////////////////////////////////////////////////////////////////////
 // app.get  table
 // let employees = [
