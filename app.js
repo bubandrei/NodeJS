@@ -6,8 +6,18 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+//////////////////////////////////////////////////////////////////////
+//three params
+// app.get('/test/:num1/:num2/:num3', (req, res) => {
+//     res.send(`${+req.params.num1 + +req.params.num2 + +req.params.num3}`);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
 
 
+/////////////////////////////////////////////////////////////////
+//2 params
 // app.get('/test/:num1/:num2/', (req, res) => {
 //     res.send(`${+req.params.num1 + +req.params.num2}`);
 // });
