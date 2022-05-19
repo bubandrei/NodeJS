@@ -6,6 +6,18 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+////////////////////////////////////////////////////////////////////
+//with array
+// let users = ['user1', 'user2', 'user3', 'user4', 'user5'];
+
+// app.get('/test/:num', (req, res) => {
+//     res.send(users[req.params.num]);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+
 ////////////////////////////////////////////////////////////////////////
 //with array
 // let arr = ['a', 'b', 'c'];
