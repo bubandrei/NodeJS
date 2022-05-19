@@ -6,6 +6,22 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+/////////////////////////////////////////////////////////////////
+// params route
+// app.get('/test/:num', (req, res) => {
+//     let num = req.params.num;
+//     if (num > 0 && num < 10) {
+//         res.send('My number:' + num);
+//     } else {
+//         res.status(404).send('not found');
+//     }
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+
+
 //////////////////////////////////////////////////////////////////
 //Optional parameters in routes
 // app.get('/test/:num1/:num2?/', (req, res) => {
