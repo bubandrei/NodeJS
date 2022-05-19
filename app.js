@@ -1,13 +1,36 @@
 import fs from 'fs';
 import { constants } from 'fs';
-// import { access } from 'fs/promises';
-// import { access, constants } from 'fs/promises';
 import express from 'express';
 import * as path from 'path';
 import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
+let userRouter = express.Router();
+let userRouter2 = express.Router();
+
+//////////////////////////////////////////////////////////////////////////////
+// route groups express.Router()
+// app.use('/city/', userRouter)
+// userRouter.get('/show/:id', function(req, res) {
+//     res.send(req.params.id);
+// });
+// userRouter.get('/edit/:id', function(req, res) {
+//     res.send(req.params.id);
+// });
+// app.use('/country/', userRouter2)
+// userRouter2.get('/list', function(req, res) {
+//     res.send('HELLO');
+// });
+// userRouter2.get('/show/:id', function(req, res) {
+//     res.send('show');
+// });
+// userRouter2.get('/edit/:id', function(req, res) {
+//     res.send('edit');
+// });
+// app.listen(3000, ()=>{
+//     console.log('Running');
+// });
 
 //////////////////////////////////////////////////////////////
 //routing whith files
