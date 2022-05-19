@@ -6,6 +6,30 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+////////////////////////////////////////////////////////////////
+//routing and array
+// let users = [
+//     {
+//         name: 'user1',
+//         age: 31,
+//     },
+//     {
+//         name: 'user2',
+//         age: 32,
+//     },
+//     {
+//         name: 'user3',
+//         age: 33,
+//     },
+// ];
+// app.get('/users/:id/', (req, res) => {
+//     let user = users[req.params.id];
+//     res.send(user.name + ' ' + user.age);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
 //////////////////////////////////////////////////////////////////////
 //routing and array
 // let users = ['user1', 'user2', 'user3', 'user4', 'user5'];
