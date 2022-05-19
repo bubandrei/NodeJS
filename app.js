@@ -1,12 +1,27 @@
-import { table } from 'console';
-import fs from 'fs/promises';
+import fs from 'fs';
 import { constants } from 'fs';
+// import { access } from 'fs/promises';
+// import { access, constants } from 'fs/promises';
 import express from 'express';
 import * as path from 'path';
 import * as url from 'url';
 const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
+
+//////////////////////////////////////////////////////////////
+//routing whith files
+// app.get('/page/:num/', (req, res) => {
+//     let path = __dirname + '/public/' + req.params.num + '.html';
+//     fs.access(path, constants.F_OK).then(() => {
+//         res.sendFile(path);
+//     }).catch(() => {
+//         res.status(404).send('not found');
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 ///////////////////////////////////////////////////////////
 //routing whith files
