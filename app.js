@@ -6,6 +6,15 @@ const __filename = url.fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 let app = express();
 
+//////////////////////////////////////////////////////////////////
+//Optional parameters in routes
+// app.get('/test/:num1/:num2?/', (req, res) => {
+//     res.send(`Hello`);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
 ////////////////////////////////////////////////////////////////////
 //route priority
 // app.get('/test/show/all/', (req, res) => {
