@@ -10,17 +10,10 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-app.get('/page/1/', function (req, res) {
-    res.render('page1');
-});
+app.get('/page/:num', (req, res) => {
+    res.render(req.params.num);
+})
 
-app.get('/page/2/', function (req, res) {
-    res.render('page2');
-});
-
-app.get('/page/3/', function (req, res) {
-    res.render('page2');
-});
-app.listen(3000, ()=>{
+app.listen(3000, () => {
     console.log('Running');
 });
