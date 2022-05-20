@@ -8,7 +8,21 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-
+//////////////////////////////////////////////////////////////
+//title
+// let titles = {
+//     index: 'главная страница',
+//     about: 'о нас',
+//     conctacs: 'контакты',
+//     price: 'наш прайс'
+// }
+// app.get('/page/:page/', (req, res) => {
+//     let name = req.params.page;
+//     res.render(name, { title: titles[name] });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
 //////////////////////////////////////////////////////////////////
 //tags
 // app.get('/page/1/', (req, res) => {
