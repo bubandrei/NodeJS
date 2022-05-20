@@ -8,6 +8,16 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
+
+//////////////////////////////////////////////////////////////////
+//tags
+// app.get('/page/1/', (req, res) => {
+//     res.render('page1', {text: '<b>aaa</b>'});
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
 //////////////////////////////////////////////////////////////////////
 //Data transfer
 // let obj = {
