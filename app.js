@@ -9,6 +9,20 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
 //////////////////////////////////////////////////////////////////////
+//Data transfer
+// let obj = {
+//     picture: 'image.png',
+//     url: 'https://www.google.com/',
+//     text1: 'Hello'
+// };
+// app.get('/page/1/', (req, res) => {
+//     res.render('page1', obj);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+//////////////////////////////////////////////////////////////////////
 //content in five variables
 // let obj = {
 //     text1: 'aaaaa', text2: 'bbbbb', text3: 'ccccc', text4: 'ddddd', text5: 'eeeee'
