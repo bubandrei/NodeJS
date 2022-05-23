@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>{{ title }}</title>
-	</head>
-	<body>
-		<header>
-			{{> header/menu}}
-		</header>
-		<main>
-			<div>index</div>
-			{{> body/body}}
-		</main>
-		<footer>
-			{{> footer/contact}}
-		</footer>
-	</body>
+
+<head>
+	<title>{{ title }}</title>
+</head>
+
+<body>
+	<header>
+		{{!-- {{> header/menu}} --}}
+	</header>
+	<main>
+		<div>index</div>
+		<div>
+			{{product.name}}
+			{{product.cost}}
+		</div>
+
+	</main>
+	<footer>
+		{{!-- {{> footer/contact}} --}}
+	</footer>
+</body>
+
 </html>

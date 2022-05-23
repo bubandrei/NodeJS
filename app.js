@@ -8,13 +8,27 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
+let product = {
+	name: 'prod',
+	cost: 1000
+}
+
 app.get('/page/1/', (req, res) => {
-    console.log(req);
-    res.render('index.hbs');
+    res.render('index', {product});
 });
 app.listen(3000, () => {
     console.log('Running');
-});
+})
+
+
+
+// app.get('/page/1/', (req, res) => {
+//     console.log(req);
+//     res.render('index.hbs');
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 //////////////////////////////////////////////////////////////
 //title
