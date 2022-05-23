@@ -8,9 +8,13 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-app.get('page/1/', (req, res) => {
-res.render('index',)
-})
+app.get('/page/1/', (req, res) => {
+    console.log(req);
+    res.render('index.hbs');
+});
+app.listen(3000, () => {
+    console.log('Running');
+});
 
 //////////////////////////////////////////////////////////////
 //title
