@@ -8,6 +8,10 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
+app.get('page/1/', (req, res) => {
+res.render('index',)
+})
+
 //////////////////////////////////////////////////////////////
 //title
 // let titles = {

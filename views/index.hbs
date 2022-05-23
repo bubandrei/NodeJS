@@ -5,14 +5,14 @@
 	</head>
 	<body>
 		<header>
-			header
+			{{> header/menu.hbs}}
 		</header>
 		<main>
 			<div>index</div>
-			{{{body}}}
+			{{{> body/body.hbs}}}
 		</main>
 		<footer>
-			footer
+			{{> footer/contact.hbs}}
 		</footer>
 	</body>
 </html>
