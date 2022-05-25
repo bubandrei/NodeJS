@@ -8,23 +8,13 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-let product = {
-    name: 'prod',
-    cost: 2000
-}
+let product = ['prod1', 'prod2', 'prod3'];
 app.get('/page/1/', (req, res) => {
-    res.render('index', {
-        amount: 10,
-        product: {
-            name: 'prod',
-            cost: 1000,
-            amount: 5
-        }
-    });
+    res.render('index', { product });
 });
 app.listen(3000, () => {
-        console.log('Running');
-    });
+    console.log('Running');
+});
 
 
 

@@ -11,11 +11,16 @@
 	</header>
 	<main>
 		<div>index</div>
-		<div>{{#with product}}
+		{{!-- <div>{{#with product}}
 			Object {{name}} {{cost}} {{amount}}
 			<div>{{../amount}}</div>
 			{{/with}}
-		</div>
+		</div> --}}
+		<ul>
+			{{#each product}}
+			<li>{{.}}</li>
+			{{/each}}
+		</ul>
 	</main>
 	<footer>
 		{{!-- {{> footer/contact}} --}}
