@@ -8,14 +8,26 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-let products = ['prod1', 'prod2', 'prod3'];
+let product = {
+	name: 'prod',
+	cost: 2000
+}
 
 app.get('/page/1/', (req, res) => {
-    res.render('index', {products});
+    res.render('index', {product});
 });
 app.listen(3000, () => {
     console.log('Running');
-});
+})
+
+// let products = ['prod1', 'prod2', 'prod3'];
+
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {products});
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 // let product = {
 // 	name: 'prod',

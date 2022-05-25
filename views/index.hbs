@@ -11,9 +11,10 @@
 	</header>
 	<main>
 		<div>index</div>
-		<div>{{products.[0]}}</div>
-		<div>{{products.[1]}}</div>
-		<div>{{products.[2]}}</div>
+		<div>{{#with product}}
+			{{name}} {{cost}}
+			{{/with}}
+		</div>
 	</main>
 	<footer>
 		{{!-- {{> footer/contact}} --}}
