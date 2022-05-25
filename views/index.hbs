@@ -16,11 +16,22 @@
 			<div>{{../amount}}</div>
 			{{/with}}
 		</div> --}}
-		<ul>
+		{{!-- <ul>
 			{{#each product}}
 			<li>{{.}}</li>
 			{{/each}}
-		</ul>
+		</ul> --}}
+		<div>
+			{{#if show1}}
+			<div>show1</div>
+			{{/if}}
+			{{#if show2}}
+			<div>show2</div>
+			{{/if}}
+			{{#if show3}}
+			<div>show3</div>
+			{{/if}}
+		</div>
 	</main>
 	<footer>
 		{{!-- {{> footer/contact}} --}}

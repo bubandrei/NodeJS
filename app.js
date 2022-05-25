@@ -8,16 +8,30 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-let product = ['prod1', 'prod2', 'prod3'];
 app.get('/page/1/', (req, res) => {
-    res.render('index', { product });
+    res.render('index', {
+        show1: true,
+        show2: false,
+        show3: true,
+    });
 });
 app.listen(3000, () => {
     console.log('Running');
 });
 
 
+/////////////////////////////////////////////////
+//each
+// let product = ['prod1', 'prod2', 'prod3'];
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', { product });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
+
+//////////////////////////////////////////////////
 // app.get('/page/1/', (req, res) => {
 //     res.render('index', {product});
 // });
@@ -25,6 +39,8 @@ app.listen(3000, () => {
 //     console.log('Running');
 // })
 
+/////////////////////////////////////////////////////
+//arr
 // let products = ['prod1', 'prod2', 'prod3'];
 
 // app.get('/page/1/', (req, res) => {
@@ -34,6 +50,7 @@ app.listen(3000, () => {
 //     console.log('Running');
 // });
 
+////////////////////////////////////////////////////
 // let product = {
 // 	name: 'prod',
 // 	cost: 1000
@@ -47,7 +64,7 @@ app.listen(3000, () => {
 // })
 
 
-
+///////////////////////////////////////////////////
 // app.get('/page/1/', (req, res) => {
 //     console.log(req);
 //     res.render('index.hbs');
