@@ -8,16 +8,30 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
-app.get('/page/1/', (req, res) => {
-    res.render('index', {
-        show1: true,
-        show2: false,
-        show3: true,
-    });
-});
-app.listen(3000, () => {
-    console.log('Running');
-});
+///////////////////////////////////////////////////
+///HANDLEBARS/////////////////////////////
+// layout change
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {
+//       layouts: 'main'
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
+////////////////////////////////////////////////////////
+//if/else
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {
+//         show1: true,
+//         show2: false,
+//         show3: true,
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 
 /////////////////////////////////////////////////
