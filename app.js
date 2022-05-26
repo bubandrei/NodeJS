@@ -1,21 +1,35 @@
 import expressHandlebars from 'express-handlebars';
 import express from 'express';
 
-const handlebars = expressHandlebars.create({
-    defaultLayout: 'main',
-    extname: 'hbs',
-    helpers: {
-        getDate: function () {
-            let date = new Date();
+/////////////////////////////////////////////////////////////
+//Passing Parameters to Helpers in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         square: function (num) {
+//             return Math.sqrt(num);
+//         }
+//     }
+// });
 
-            let year = date.getFullYear();
-            let month = date.getMonth() + 1;
-            let day = date.getDate();
+////////////////////////////////////////////////////////////
+// helpers getDate
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         getDate: function () {
+//             let date = new Date();
 
-            return year + '-' + month + '-' + day;
-        }
-    }
-});
+//             let year = date.getFullYear();
+//             let month = date.getMonth() + 1;
+//             let day = date.getDate();
+
+//             return year + '-' + month + '-' + day;
+//         }
+//     }
+// });
 
 let app = express();
 app.engine('hbs', handlebars.engine);
