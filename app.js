@@ -8,6 +8,20 @@ import express from 'express';
 //     defaultLayout: 'main',
 //     extname: 'hbs',
 //     helpers: {
+//         sum: function (num1, num2, num3) {
+//             return num1 + num2 + num3;
+//         }
+//     }
+// })
+
+
+
+/////////////////////////////////////////////////////////////
+//Passing Parameters to Helpers in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
 //         num: function (number) {
 //             return Math.round(number);
 //         }
