@@ -1,6 +1,19 @@
 import expressHandlebars from 'express-handlebars';
 import express from 'express';
 
+
+/////////////////////////////////////////////////////////////
+//Passing Parameters to Helpers in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         num: function (number) {
+//             return Math.round(number);
+//         }
+//     }
+// });
+
 /////////////////////////////////////////////////////////////
 //Passing Parameters to Helpers in Handlebars
 // const handlebars = expressHandlebars.create({
