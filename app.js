@@ -3,6 +3,32 @@ import express from 'express';
 
 
 /////////////////////////////////////////////////////////////
+//Helper context in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         date: function () {
+//             return this.split('-').reverse().join('-');
+//         }
+//     }
+// })
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
+// let obj = {
+//     date1: '12 - 03 - 2027',
+//     date2: '13 - 04 - 2028',
+//     date3: '14 - 05 - 2029'
+// }
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {obj});
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+/////////////////////////////////////////////////////////////
 //Passing Parameters to Helpers in Handlebars with variables
 
 // const handlebars = expressHandlebars.create({
