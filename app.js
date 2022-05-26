@@ -1,6 +1,34 @@
 import expressHandlebars from 'express-handlebars';
 import express from 'express';
 
+///////////////////////////////////////////////////////////////
+//Helper combinations in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         square: function (num) {
+//             return num * num;
+//         },
+//         cube: function (num) {
+//             return num * num * num;
+//         },
+//         sum: function (num1, num2) {
+//             return num1 + num2;
+//         }
+//     }
+// })
+
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
+
+// app.get('/page/1/', (req, res) => {
+//     res.render('index');
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
 
 /////////////////////////////////////////////////////////////
 //Helper context in Handlebars
