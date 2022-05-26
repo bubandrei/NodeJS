@@ -3,6 +3,34 @@ import express from 'express';
 
 
 /////////////////////////////////////////////////////////////
+//Passing Parameters to Helpers in Handlebars with variables
+
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         date: function (newDate) {
+//             return newDate.split('-').reverse().join('-');
+//         }
+
+//     }
+// })
+
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
+
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {
+//         date1: '12 - 03 - 2022',
+//         date2: '13 - 04 - 2023',
+//         date3: '14 - 05 - 2024'
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+/////////////////////////////////////////////////////////////
 //Passing Parameters to Helpers in Handlebars
 // const handlebars = expressHandlebars.create({
 //     defaultLayout: 'main',
@@ -83,13 +111,13 @@ import express from 'express';
 //     }
 // });
 
-let app = express();
-app.engine('hbs', handlebars.engine);
-app.set('view engine', 'hbs');
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
 
-app.get('/page/1/', (req, res) => {
-    res.render('index');
-});
-app.listen(3000, () => {
-    console.log('Running');
-})
+// app.get('/page/1/', (req, res) => {
+//     res.render('index');
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
