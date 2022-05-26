@@ -8,6 +8,19 @@ import express from 'express';
 //     defaultLayout: 'main',
 //     extname: 'hbs',
 //     helpers: {
+//         date: function (newDate) {
+//             return newDate.split('-').reverse().join('-');
+//         }
+
+//     }
+// })
+
+/////////////////////////////////////////////////////////////
+//Passing Parameters to Helpers in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
 //         word: (str) => {
 //             return str[0].toUpperCase() + str.slice(1);
 //         }
