@@ -2,27 +2,62 @@ import expressHandlebars from 'express-handlebars';
 import express from 'express';
 import { appendFile } from 'fs';
 
+//////////////////////////////////////////////////////////////////
+//Local Helpers in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         date: function (newDate) {
+//             return newDate.split('-').reverse().join('-');
+//         }
 
-const handlebars = expressHandlebars.create({
-    defaultLayout: 'main',
-    extname: 'hbs',
-    helpers: {
-        link: function (href, ancor) {
-            return '<a href="' + href + '">' + ancor + '</a>';
-        }
-    }
-});
+//     }
+// })
 
-let app = express();
-app.engine('hbs', handlebars.engine);
-app.set('view engine', 'hbs');
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
 
-app.get('/page/1/', (req, res) => {
-    res.render('index');
-});
-app.listen(3000, () => {
-    console.log('Running');
-});
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {
+//         date1: '12 - 03 - 2032',
+//         date2: '13 - 04 - 2043',
+//         date3: '14 - 05 - 2054',
+//         helpers: {
+//             year: function () {
+//                 return this.date1;
+//             }
+//         }
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+
+///////////////////////////////////////////////////////////
+//HTML code generation in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         link: function (href, ancor) {
+//             return '<a href="' + href + '">' + ancor + '</a>';
+//         }
+//     }
+// });
+
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
+
+// app.get('/page/1/', (req, res) => {
+//     res.render('index');
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 // const handlebars = expressHandlebars.create({
 //     defaultLayout: 'main',
