@@ -8,6 +8,17 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
+/////////////////////////////////////////////////////
+//Hiding a form after submitting it in Express
+// app.get('/', (req, res) => {
+//     res.render('form', {
+//         query: req.query,
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
 
 //
 // app.get('/', (req, res) => {
