@@ -9,6 +9,26 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
 
+//
+// app.get('/', (req, res) => {
+//     if (req.query.submit) {
+//         let num1 = +req.query.test1;
+//         let num2 = +req.query.test2;
+//         let num3 = +req.query.test3;
+//         let num4 = +req.query.test4;
+//         let num5 = +req.query.test5;
+//         let sum = num1 + num2 + num3 + num4 + num5;
+//         res.send('result: ' + sum);
+//     } else {
+//         res.render('form');
+//     }
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+
+//////////////////////////////////////////////////////////////////
 //Save form values ​​after submit
 // app.get('/', (req, res) => {
 //     res.render('form', {
