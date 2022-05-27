@@ -7,7 +7,7 @@ const handlebars = expressHandlebars.create({
     extname: 'hbs',
     helpers: {
         sum: function () {
-            return this.cost * this.amount;
+            return this.name + '-' + this.cost + ' amount ' + this.amount + ' value ' + this.cost * this.amount;
         }
     }
 });

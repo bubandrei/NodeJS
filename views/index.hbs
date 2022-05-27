@@ -12,9 +12,14 @@
 	<main>
 		<div>index</div>
 		<div>
-			{{#each purchases}}
-			{{ sum}}
-			{{/each}}
+			<ul>
+				{{#each purchases}}
+				<li>
+					{{sum}}
+				</li>
+				{{/each}}
+			</ul>
+
 		</div>
 		{{!-- <div>{{purchase.name}} {{sum purchase}}</div> --}}
 		{{!-- <div>{{cube (square 3)}}</div>
