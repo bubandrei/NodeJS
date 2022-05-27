@@ -8,6 +8,19 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
+
+//Save form values ​​after submit
+// app.get('/', (req, res) => {
+//     res.render('form', {
+//         query: req.query
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
+
+
+
 /////////////////////////////////////////////////////////////////
 //display the result near the form
 // app.get('/', (req, res) => {
