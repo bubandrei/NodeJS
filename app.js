@@ -2,12 +2,13 @@ import expressHandlebars from 'express-handlebars';
 import express from 'express';
 import { appendFile } from 'fs';
 
+
 const handlebars = expressHandlebars.create({
     defaultLayout: 'main',
     extname: 'hbs',
     helpers: {
-        sum: function () {
-            return this.name + '-' + this.cost + ' amount ' + this.amount + ' value ' + this.cost * this.amount;
+        link: function (href, ancor) {
+            return '<a href="' + href + '">' + ancor + '</a>';
         }
     }
 });
@@ -17,29 +18,50 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
 app.get('/page/1/', (req, res) => {
-    res.render('index', {
-        purchases: [
-            {
-                name: 'purch1',
-                cost: 1000,
-                amount: 5
-            },
-            {
-                name: 'purch2',
-                cost: 2000,
-                amount: 6
-            },
-            {
-                name: 'purch3',
-                cost: 3000,
-                amount: 7
-            },
-        ],
-    });
+    res.render('index');
 });
 app.listen(3000, () => {
     console.log('Running');
 });
+
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         sum: function () {
+//             return this.name + '-' + this.cost + ' amount ' + this.amount + ' value ' + this.cost * this.amount;
+//         }
+//     }
+// });
+
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
+
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {
+//         purchases: [
+//             {
+//                 name: 'purch1',
+//                 cost: 1000,
+//                 amount: 5
+//             },
+//             {
+//                 name: 'purch2',
+//                 cost: 2000,
+//                 amount: 6
+//             },
+//             {
+//                 name: 'purch3',
+//                 cost: 3000,
+//                 amount: 7
+//             },
+//         ],
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 ///////////////////////////////////////////////////////////////
 //Passing Objects to Helpers in Handlebars
