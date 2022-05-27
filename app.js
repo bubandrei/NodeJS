@@ -1,5 +1,35 @@
 import expressHandlebars from 'express-handlebars';
 import express from 'express';
+import { appendFile } from 'fs';
+
+///////////////////////////////////////////////////////////////
+//Passing Objects to Helpers in Handlebars
+// const handlebars = expressHandlebars.create({
+//     defaultLayout: 'main',
+//     extname: 'hbs',
+//     helpers: {
+//         sum: function (purchase) {
+//             return purchase.cost * purchase.amount;
+//         }
+//     }
+// });
+
+// let app = express();
+// app.engine('hbs', handlebars.engine);
+// app.set('view engine', 'hbs');
+
+// app.get('/page/1/', (req, res) => {
+//     res.render('index', {
+//         purchase: {
+//             name: 'food',
+//             cost: 1000,
+//             amount: 5
+//         }
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 ///////////////////////////////////////////////////////////////
 //Helper combinations in Handlebars
