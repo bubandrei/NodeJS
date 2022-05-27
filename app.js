@@ -8,6 +8,17 @@ let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 
+/////////////////////////////////////////////////////////////////
+//display the result near the form
+// app.get('/', (req, res) => {
+//     res.render('form',{
+//         sum: +req.query.test1 + +req.query.test2 + +req.query.test3
+//     });
+// });
+
+// app.listen(3000, () => {
+//     console.log('Running');
+// })
 ////////////////////////////////////////////
 //Submitting a GET Form in Express
 // app.get('/', (req, res) => {
