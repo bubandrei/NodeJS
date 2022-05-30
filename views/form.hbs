@@ -7,6 +7,19 @@
 
 <body>
     <form action="/" method="post">
+        <div>18 age?</div>
+        <input type="checkbox" name="flag">
+        <input type="submit" name="submit">
+    </form>
+    {{#if body.submit}}
+    {{#if body.flag}}
+    <p>Access is allowed</p>
+    {{else}}
+    <p>Access is denied</p>
+    {{/if}}
+    {{/if}}
+
+    {{!-- <form action="/" method="post">
         <div>Input your name</div>
         <input type="text">
         <input type="checkbox" name="flag">
@@ -18,7 +31,7 @@
     {{else}}
     <p>Bye</p>
     {{/if}}
-    {{/if}}
+    {{/if}} --}}
 
     {{!-- <form action="/" method="post">
         <input type="checkbox" name="flag">
