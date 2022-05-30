@@ -10,8 +10,20 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
+////////////////////////////////////////////////////////
+//textarea in express
+// app.get('/', (req, res) => {
+//     res.render('form');
+// });
+// app.post('/', (req, res) => {
+//     res.send(req.body.review);
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
-//
+//////////////////////////////////////////////////////////////////
+//Save form value after POST in Express
 // app.get('/', (req, res) => {
 //     res.render('form');
 // });
