@@ -10,17 +10,34 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get('/', (req, res) => {
-    res.render('form');
-});
-app.post('/', (req, res) => {
-    res.render('form', {
-        body: req.body
-    });
-});
-app.listen(3000, () => {
-    console.log('Running');
-});
+////////////////////////////////////////////////////
+// radio
+// app.get('/', (req, res) => {
+//     res.render('form');
+// });
+// app.post('/', (req, res) => {
+//     console.log(req.body.radio);
+//     res.render('form', {
+//         body: req.body.radio
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
+//////////////////////////////////////////////////////
+//flag submit checkbox
+// app.get('/', (req, res) => {
+//     res.render('form');
+// });
+// app.post('/', (req, res) => {
+//     res.render('form', {
+//         body: req.body
+//     });
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
 
 ////////////////////////////////////////////////////////
 //flag submit
