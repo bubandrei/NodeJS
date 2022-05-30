@@ -6,6 +6,19 @@
 </head>
 
 <body>
+    <form action="/" method="post">
+        <input type="checkbox" name="flag">
+        <input type="text">
+        <input type="submit" name="submit">
+    </form>
+    {{#if body.submit}}
+    {{#if body.flag}}
+    <p>OK</p>
+    {{else}}
+    <p>NO</p>
+    {{/if}}
+    {{/if}}
+
     {{!-- <form action="/" method="post">
         <textarea name="review" cols="30" rows="10">{{body.review}}</textarea>
         <input type="submit">

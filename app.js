@@ -10,6 +10,20 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.get('/', (req, res) => {
+    res.render('form');
+});
+app.post('/', (req, res) => {
+    res.render('form', {
+        body: req.body
+    });
+});
+app.listen(3000, () => {
+    console.log('Running');
+});
+
+
+
 /////////////////////////////////////////////////////////
 //texarea
 // app.get('/', (req, res) => {
