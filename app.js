@@ -1,5 +1,6 @@
 import expressHandlebars from 'express-handlebars';
 import express from 'express';
+import bodyParser from 'body-parser';
 const handlebars = expressHandlebars.create({
     defaultLayout: 'main',
     extname: 'hbs'
@@ -7,6 +8,18 @@ const handlebars = expressHandlebars.create({
 let app = express();
 app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
+app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+    res.render('form');
+});
+app.post('/target/', (req, res) => {
+    console.log(req.body);
+    res.send(`${req.body.name} ${req.body.country} ${req.body.city}`);
+});
+app.listen(3000, () => {
+    console.log('Running');
+});
 
 /////////////////////////////////////////////////////
 //Hiding a form after submitting it in Express
