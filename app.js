@@ -10,6 +10,22 @@ app.engine('hbs', handlebars.engine);
 app.set('view engine', 'hbs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
+///////////////////////////////////////////////////
+//select
+// app.get('/', (req, res) => {
+//     res.render('form');
+// });
+// app.post('/', (req, res) => {
+//     // console.log(req.body.test);
+//     res.render('form', {
+//         body: req.body.test
+//     })
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
+
 ////////////////////////////////////////////////////
 // radio
 // app.get('/', (req, res) => {
