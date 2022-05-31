@@ -6,7 +6,24 @@ let secret = '44';
 app.use(cookieParser(secret));
 
 //////////////////////////////////////////////////
-/////coockie
+// cookie options
+// app.get('/', (req, res) => {
+//     res.cookie('main', 'Show cookie', {
+//         domain: 'site.com',
+//         path: '/show/',
+//         maxAge: 1000 * 60 * 60,
+//         secure: true,
+//         httpOnly: true
+//     });
+//     res.send('Enabled')
+// });
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
+
+//////////////////////////////////////////////////
+/////cookie
 // app.get('/', (req, res) => {
 //     res.cookie('main', 'Show cookie');
 //     res.send('Enabled')
