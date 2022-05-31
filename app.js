@@ -9,9 +9,23 @@ app.use(expressSession({
     secret: secret,
 }));
 
+////////////////////////////////////////////////////////////
+//time date
+// app.get('/', (req, res) => {
+//     console.log(req.session.time);
+//     // let time = new Date().toLocaleDateString();
+//     let time = new Date().toLocaleTimeString();
+//     req.session.time = time;
+//     // Write response
+//     res.end(req.session.time)
+// })
+// app.listen(3000, () => {
+//     console.log('Running');
+// });
+
 //////////////////////////////////////////////////////////////
 //count
-// app.get('/', function (req, res) {
+// app.get('/', (req, res) => {
 //     // Update views
 //     console.log(req.session.views);
 //     req.session.views = (req.session.views || 0) + 1
