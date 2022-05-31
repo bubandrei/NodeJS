@@ -5,6 +5,19 @@ let app = express();
 let secret = '44';
 app.use(cookieParser(secret));
 
+//////////////////////////////////////////////////
+/////coockie
+// app.get('/', (req, res) => {
+//     res.cookie('main', 'Show cookie');
+//     res.send('Enabled')
+// });
+// app.get('/show/', (req, res) => {
+//     res.send(req.cookies);
+// });
+// app.listen(3000, ()=>{
+//     console.log('Running');
+// });
+
 ///////////////////////////////////////////////////
 //cookie(save, read, remove)
 // app.get('/', (req, res) => {
