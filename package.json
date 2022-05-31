@@ -21,6 +21,7 @@
     "cookie-parser": "^1.4.6",
     "express": "^4.18.1",
     "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
     "hbs": "^4.2.0",
     "lodash": "^4.17.21",
     "supervisor": "^0.12.0"
